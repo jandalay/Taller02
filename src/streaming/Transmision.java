@@ -3,7 +3,7 @@ package streaming;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Transmision {
+public class Transmision { //Esta clase tambien usa programación estructurada con los bucles FOR
 
     private String titulo;
     private Usuario profesor;

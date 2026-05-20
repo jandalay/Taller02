@@ -43,10 +43,12 @@ public class Main {
         
         // Mostrar estadísticas usando Stream API
         System.out.println();
-        StatsService.mostrarEstadisticas(transmision);
+        StatsService statsService = new StatsService();
+        statsService.mostrarEstadisticas(transmision);
         
         // Filtrar y mostrar solo estudiantes
         System.out.println();
+        // Estos filtros son parte de la programación funcional
         List<Usuario> estudiantes = transmision.getAsistentes()
                 .stream()
                 .filter(u -> "estudiante".equals(u.getRol()))

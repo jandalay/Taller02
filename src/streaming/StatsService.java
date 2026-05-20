@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class StatsService {
     
-    public static void mostrarEstadisticas(Transmision transmision) {
+    public void mostrarEstadisticas(Transmision transmision) {
         System.out.println("\n=== ESTADÍSTICAS DE LA TRANSMISIÓN ===");
         System.out.println("Título: " + transmision.getTitulo());
         System.out.println("Profesor: " + transmision.getProfesor().getNombre());
@@ -23,7 +23,7 @@ public class StatsService {
         );
     }
     
-    public static void mostrarAsistentes(Transmision transmision) {
+    public void mostrarAsistentes(Transmision transmision) {
         System.out.println("\n=== ASISTENTES ===");
         transmision.getAsistentes().forEach(u -> 
             System.out.println("- " + u.getNombre() + " (" + u.getRol() + ")")
