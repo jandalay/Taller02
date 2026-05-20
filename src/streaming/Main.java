@@ -48,7 +48,6 @@ public class Main {
         
         // Filtrar y mostrar solo estudiantes
         System.out.println();
-        // Estos filtros son parte de la programación funcional
         List<Usuario> estudiantes = transmision.getAsistentes()
                 .stream()
                 .filter(u -> "estudiante".equals(u.getRol()))
